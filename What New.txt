@@ -20,3 +20,4 @@
 20.0 ทำหน้า profile ใหม่
 21.0 ทำหน้า profile ใหม่
 22.0 ทำหน้า homepage ใหม่ ทำให้โฮสขึ้น github ได้ / แก้บัคทำให้โฮสขึ้น github ได้
+22.1 แก้บัค index.html ไม่ใช่ folder homepage
