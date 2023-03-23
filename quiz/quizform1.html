@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quizform1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- -------------------- Sidebar -------------------- -->
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <img class="logo hidden" src="/images/50295306.png" alt="">
+                <div class="sidebar-toggle">
+                    <i class="fa-solid fa-bars toggle-open"></i>
+                    <i class="fa-solid fa-chevron-left toggle-close hidden"></i>
+                </div>
+
+                <div class="sidebar-title hidden">
+                    <span class="name">Minee Master</span>
+                    <span class="text">System</span>
+                </div>
+            </div>
+
+            <div class="sidebar-menu">
+                <div class="menu-bar">
+                    <ul>
+                        <li class="nav-link"><a href="/homepage/index.html"><i class="fa-solid fa-house icon"></i><span
+                                    class="menu-text menu-texthidden">หน้าแรก</span></a></li>
+                        <li class="nav-link"><a href="/lesson/lesson.html"><i class="fa-solid fa-book icon"></i><span
+                                    class="menu-text menu-texthidden">บทเรียน</span></a></li>
+                        <li class="nav-link"><a href="/metaverse/metaverse.html"><i
+                                    class="fa-solid fa-vr-cardboard icon"></i><span
+                                    class="menu-text menu-texthidden">โลกจำลอง</span></a></li>
+                        <li class="nav-link"><a href="/quiz/quiz.html"><i class="fa-solid fa-vials icon"></i><span
+                                    class="menu-text menu-texthidden">แบบทดสอบ</span></a></li>
+                        <li class="nav-link"><a href="#"><i class="fa-solid fa-bell icon"></i><span
+                                    class="menu-text menu-texthidden">การแจ้งเตือน</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-bar -bottom">
+                    <ul>
+                        <li class="nav-link"><a href="#"><i class="fa-solid fa-user icon"></i><span
+                                    class="menu-text menu-texthidden">โปรไฟล์</span></a></li>
+                        <li class="nav-link"><a href="#"><i class="fa-solid fa-gear icon"></i><span
+                                    class="menu-text menu-texthidden">การตั้งค่า</span></a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- -------------------- End Sidebar -------------------- -->
+
+        <!-- start Quiz button -->
+        <div class="start_btn">
+            <h2 class="start-title">แบบทดสอบท้ายบทที่ 1</h2>
+            <button>เริ่มทำแบบทดสอบ</button></div>
+        <!-- Info Box -->
+        <div class="info_box">
+            <div class="info-title"><span>อ่านก่อนทำแบบทดสอบ!</span></div>
+            <div class="info-list">
+                <div class="info">1. มีเวลาตอบคำถามข้อละ <span>15 วินาที</span></div>
+                <div class="info">2. เมื่อตอบแล้ว จะไม่สามารถยกเลิกได้</div>
+                <div class="info">3. ไม่สามารถเลือกตัวเลือกใดๆ ได้เมื่อหมดเวลา</div>
+                <div class="info">4. ไม่สามารถออกจากแบบทดสอบได้ในขณะที่กำลังเล่น</div>
+                <div class="info">5. เมื่อตอบถูกจะได้คะแนนข้อละ <span>1 คะแนน</span></div>
+            </div>
+            <div class="buttons">
+                <button class="quit">ออก</button>
+                <button class="restart">เริ่ม</button>
+            </div>
+        </div>
+        <!-- Quiz Box -->
+        <div class="quiz_box">
+            <header>
+                <div class="title">แบบทดสอบท้ายบทที่ 1</div>
+                <div class="timer">
+                    <div class="time_left_txt">เหลือเวลาอีก</div>
+                    <div class="timer_sec">15</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="que_text">
+                    <!-- Here I've inserted question from JavaScript -->
+                </div>
+                <div class="option_list">
+                    <!-- Here I've inserted options from JavaScript -->
+                </div>
+            </section>
+            <!-- footer of Quiz Box -->
+            <footer>
+                <div class="total_que">
+                    <!-- Here I've inserted Question Count Number from JavaScript -->
+                </div>
+                <button class="next_btn">ข้อต่อไป</button>
+            </footer>
+        </div>
+        <!-- Result Box -->
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">คุณทำแบบทดสอบเสร็จแล้ว!</div>
+            <div class="score_text">
+                <!-- Here I've inserted Score Result from JavaScript -->
+            </div>
+            <div class="buttons">
+                <button class="restart">เริ่มใหม่</button>
+                <button class="quit">ออก</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="quizform1.js"></script>
+    <script src="quizformquestions1.js"></script>
+
+</body>
+
+</html>

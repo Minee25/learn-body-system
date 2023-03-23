@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- -------------------- Sidebar -------------------- -->
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <img class="logo hidden" src="/images/50295306.png" alt="">
+                <div class="sidebar-toggle">
+                    <i class="fa-solid fa-bars toggle-open"></i>
+                    <i class="fa-solid fa-chevron-left toggle-close hidden"></i>
+                </div>
+
+                <div class="sidebar-title hidden">
+                    <span class="name">Minee Master</span>
+                    <span class="text">System</span>
+                </div>
+            </div>
+
+            <div class="sidebar-menu">
+                <div class="menu-bar">
+                    <ul>
+                        <li class="nav-link"><a href="/homepage/index.html"><i class="fa-solid fa-house icon"></i><span
+                                    class="menu-text menu-texthidden">หน้าแรก</span></a></li>
+                        <li class="nav-link"><a href="/lesson/lesson.html"><i class="fa-solid fa-book icon"></i><span
+                                    class="menu-text menu-texthidden">บทเรียน</span></a></li>
+                        <li class="nav-link"><a href="/metaverse/metaverse.html"><i
+                                    class="fa-solid fa-vr-cardboard icon"></i><span
+                                    class="menu-text menu-texthidden">โลกจำลอง</span></a></li>
+                        <li class="nav-link"><a href="/quiz/quiz.html"><i class="fa-solid fa-vials icon"></i><span
+                                    class="menu-text menu-texthidden">แบบทดสอบ</span></a></li>
+                        <li class="nav-link"><a href="#"><i class="fa-solid fa-bell icon"></i><span
+                                    class="menu-text menu-texthidden">การแจ้งเตือน</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-bar bottom">
+                    <ul>
+                        <li class="nav-link"><a href="/loginpage/login.html"><i class="fa-solid fa-user icon"></i><span
+                                    class="menu-text menu-texthidden">โปรไฟล์</span></a></li>
+                        <li class="nav-link"><a href="/howtouse/htu.html"><i class="fa-solid fa-question"></i><span
+                                    class="menu-text menu-texthidden">วิธีใช้งาน</span></a></li>
+                        <li class="nav-link"><a href="#"><i class="fa-solid fa-gear icon"></i><span
+                                    class="menu-text menu-texthidden">การตั้งค่า</span></a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- -------------------- End Sidebar -------------------- -->
+
+        <div class="bg"><video autoplay muted loop src="/video/Kimi No Na Wa - Sky.mp4"></video></div>
+        <div class="content">
+            <div class="card">
+                <div class="form">
+                    <div class="form-switch">
+                        <div class="switch-change switch-change-login">เข้าสู่ระบบ</div>
+                        <div class="switch-login">เข้าสู่ระบบ</div>
+                        <div class="switch-signup">สมัครบัญชี</div>
+                    </div>
+
+                    <!--  -->
+
+                    <div class="form-login">
+                        <!-- <div class="logo"><img src="/images/50295306.png" alt=""></div> -->
+                        <h1 class="title">เข้าสู่ระบบ</h1>
+                        <form class="form-input" action="#" method="post">
+                            <label for="email">อีเมล</label>
+                            <input type="email" id="email" name="email" required placeholder="ชื่อผู้ใช้งาน">
+                            <label for="password">รหัสผ่าน</label>
+                            <input type="password" id="password" name="password" required placeholder="รหัสผ่าน">
+                            <a class="forgot-password" href="#">ลืมรหัสผ่าน?</a>
+                            <div class="box-submit-btn">
+                                <input type="submit" value="Sign in">
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--  -->
+
+                    <div class="form-signup hide">
+                        <!-- <div class="logo"><img src="/images/50295306.png" alt=""></div> -->
+                        <h1 class="title">สมัครบัญชี</h1>
+                        <form class="form-input" action="#" method="post">
+                            <label for="firstname">ชื่อจริง</label>
+                            <input type="firstname" id="firstname" name="firstname" required placeholder="ชื่อจริง">
+                            <label for="lastname">นามสกุล</label>
+                            <input type="lastname" id="lastname" name="lastname" required placeholder="นามสกุล">
+                            
+                            <label for="email">อีเมล</label>
+                            <input type="email" id="email" name="email" required placeholder="อีเมล">
+                            <label for="password">รหัสผ่าน</label>
+                            <input type="password" id="password" name="password" required placeholder="รหัสผ่าน">
+                            <a class="forgot-password" href="#">วิธีสมัครบัญชี</a>
+                            <div class="box-submit-btn">
+                                <input type="submit" value="Sign in">
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--  -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="loginscript.js"></script>
+
+</body>
+
+</html>
