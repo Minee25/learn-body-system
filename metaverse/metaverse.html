@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metaver</title>
     <link rel="stylesheet" href="metaversestyle.css">
+    <link rel="stylesheet" href="../scriptcss/sidebarstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,17 +16,18 @@
 <body>
 
     <div class="container">
+        
         <!-- -------------------- Sidebar -------------------- -->
         <div class="sidebar">
             <div class="sidebar-top">
-                <img class="logo hidden" src="/images/50295306.png" alt="">
+                <img class="logo hidden" src="../images/logo body.png" alt="">
                 <div class="sidebar-toggle">
                     <i class="fa-solid fa-bars toggle-open"></i>
                     <i class="fa-solid fa-chevron-left toggle-close hidden"></i>
                 </div>
 
                 <div class="sidebar-title hidden">
-                    <span class="name">Minee Master</span>
+                    <span class="name">Human Body</span>
                     <span class="text">System</span>
                 </div>
             </div>
@@ -33,41 +35,36 @@
             <div class="sidebar-menu">
                 <div class="menu-bar">
                     <ul>
-                        <li class="nav-link"><a href="/homepage/index.html"><i class="fa-solid fa-house icon"></i><span
+                        <li class="nav-link"><a class="sidebar-selection" href="../homepage/index.html"><i class="fa-solid fa-house icon" title="หน้าแรก"></i><span
                                     class="menu-text menu-texthidden">หน้าแรก</span></a></li>
-                        <li class="nav-link"><a href="/lesson/lesson.html"><i class="fa-solid fa-book icon"></i><span
+                        <li class="nav-link"><a href="../lesson/lesson.html"><i class="fa-solid fa-book icon" title="บทเรียน"></i><span
                                     class="menu-text menu-texthidden">บทเรียน</span></a></li>
-                        <li class="nav-link"><a href="/metaverse/metaverse.html"><i
-                                    class="fa-solid fa-vr-cardboard icon"></i><span
+                        <li class="nav-link"><a href="../metaverse/metaverse.html"><i class="fa-solid fa-vr-cardboard icon" title="โลกจำลอง"></i><span
                                     class="menu-text menu-texthidden">โลกจำลอง</span></a></li>
-                        <li class="nav-link"><a href="/quiz/quiz.html"><i class="fa-solid fa-vials icon"></i><span
+                        <li class="nav-link"><a href="../quiz/quiz.html"><i class="fa-solid fa-vials icon" title="แบบทดสอบ"></i><span
                                     class="menu-text menu-texthidden">แบบทดสอบ</span></a></li>
-                        <li class="nav-link"><a href="#"><i class="fa-solid fa-bell icon"></i><span
-                                    class="menu-text menu-texthidden">การแจ้งเตือน</span></a></li>
                     </ul>
                 </div>
 
-                <div class="menu-bar -bottom">
+                <div class="menu-bar bottom">
                     <ul>
-                        <li class="nav-link"><a href="#"><i class="fa-solid fa-user icon"></i><span
+                        <li class="nav-link"><a href="../profile/profile.html"><i class="fa-solid fa-user icon" title="โปรไฟล์"></i><span
                                     class="menu-text menu-texthidden">โปรไฟล์</span></a></li>
-                        <li class="nav-link"><a href="#"><i class="fa-solid fa-gear icon"></i><span
-                                    class="menu-text menu-texthidden">การตั้งค่า</span></a></li>
+                        <li class="nav-link"><a href="../howtouse/htu.html"><i class="fa-solid fa-question" title="วิธีใช้งาน"></i><span
+                                    class="menu-text menu-texthidden">วิธีใช้งาน</span></a></li>
                     </ul>
                 </div>
-
-
             </div>
         </div>
-
         <!-- -------------------- End Sidebar -------------------- -->
+
 
         <div class="content">
             <div class="title">
                 <div class="bg-video">
-                    <video autoplay loop muted src="/video/spatial example video1.mp4"></video>
+                    <video autoplay loop muted src="../video/spatial example video1.mp4"></video>
                 </div>
-                <img class="logo" src="/images/spatial logo.png" alt="">
+                <img class="logo" src="../images/spatial logo.png" alt="">
                 <h1>เดินชมห้องจำลองได้ดั่งใจ</h1>
                 <p>เดินชมและดูห้องจำลองเกี่ยวกับชีววิทยา</p>
                 <a class="title-btn" href="https://www.spatial.io/s/KKRs-Lo-Fi-Scene-6417c74fa7fd059c7c6b3a79?share=4813502410760166818" target="_blank">ไปที่ Spatial</a>
@@ -85,15 +82,15 @@
                 </div>
 
                 <div class="example-image">
-                    <img src="/images/universe.jpg" alt="">
-                    <img src="/images/universe.jpg" alt="">
-                    <img src="/images/universe.jpg" alt="">
-                    <img src="/images/universe.jpg" alt="">
-                    <img src="/images/universe.jpg" alt="">
-                    <img src="/images/universe.jpg" alt="">
-                    <img src="/images/universe.jpg" alt="">
-                    <img src="/images/universe.jpg" alt="">
-                    <img src="/images/universe.jpg" alt="">
+                    <img src="../images/universe.jpg" alt="">
+                    <img src="../images/universe.jpg" alt="">
+                    <img src="../images/universe.jpg" alt="">
+                    <img src="../images/universe.jpg" alt="">
+                    <img src="../images/universe.jpg" alt="">
+                    <img src="../images/universe.jpg" alt="">
+                    <img src="../images/universe.jpg" alt="">
+                    <img src="../images/universe.jpg" alt="">
+                    <img src="../images/universe.jpg" alt="">
                 </div>
 
             </div>
@@ -114,15 +111,16 @@
                 <div class="download">
                     <h1>Download App</h1>
                     <a class="download-link" href="https://play.google.com/store/apps/details?id=io.spatial.spatial"
-                        target="_blank"><img src="/images/get it on google play.png" alt=""></a>
+                        target="_blank"><img src="../images/get it on google play.png" alt=""></a>
                     <a class="download-link" href="https://apps.apple.com/us/app/spatial/id1528403747"
-                        target="_blank"><img src="/images/download on the app store.png" alt=""></a>
+                        target="_blank"><img src="../images/download on the app store.png" alt=""></a>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="metaversescript.js"></script>
+    <script src="../scriptcss/sidebarscript.js"></script>
 </body>
 
 </html>
