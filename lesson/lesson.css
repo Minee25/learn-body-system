@@ -4,196 +4,192 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-body {
-    background: #5372F0;
-}
-
 
 .container {
     height: 100vh;
 }
 
+.bg {
+    background: linear-gradient(90deg, rgb(0, 225, 255) 0%, rgb(255, 0, 128) 100%);
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+    position: fixed;
+}
+
 .content {
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    flex-direction: column;
     height: 100%;
-    padding: 10px;
+    width: 100%;
+    padding: 20px;
 }
 
-/* -------------------- Tabs -------------------- */
+/*  */
 
-.wrapper {
-    position: absolute;
-    /* top: 10px; */
-    /* margin-bottom: 500px; */
-    width: 100vh;
-    padding: 20px 35px;
-    overflow-x: hidden;
-    max-width: 1000px;
-    background: #fff;
-    border-radius: 13px;
+.box {
+    /* outline: 1px solid red; */
+    /* height: 100%; */
+    background: #eaeff1;
+    /* background: #fff; */
 }
 
-.wrapper .icon {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 120px;
-    display: flex;
-    align-items: center;
-}
-
-.wrapper .icon:first-child {
-    left: 0;
-    display: none;
-    background: linear-gradient(90deg, #fff 70%, transparent);
-}
-
-.wrapper .icon:last-child {
-    right: 0;
-    justify-content: flex-end;
-    background: linear-gradient(-90deg, #fff 70%, transparent);
-}
-
-.wrapper .icon i {
-    width: 55px;
-    height: 55px;
-    cursor: pointer;
-    font-size: 1.2rem;
+.title {
     text-align: center;
-    line-height: 55px;
-    border-radius: 50%;
+    font-size: 44px;
 }
 
-.wrapper .icon i:hover {
-    background: #efedfb;
-}
+/*  */
 
-.wrapper .icon:first-child i {
-    margin-left: 15px;
-}
-
-.wrapper .icon:last-child i {
-    margin-right: 15px;
-}
-
-.wrapper .tabs-box {
+.card-box {
+    /* outline: 1px solid red; */
     display: flex;
-    gap: 12px;
-    list-style: none;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+    align-items: center;
+    min-height: calc(100vh - 205px);
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.tabs-box.dragging {
-    scroll-behavior: auto;
-    cursor: grab;
+.card {
+    margin: 10px;
+    /* outline: 1px solid gold; */
+    background: #fff;
+    /* border: 1px solid #000; */
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.144);
+    padding: 10px;
+    padding-bottom: 10px;
+    transition: 0.2s;
 }
 
-.tabs-box .tab {
-    cursor: pointer;
-    /* font-size: 1.18rem; */
-    white-space: nowrap;
-    background: #f5f4fd;
-    padding: 11px 18px;
-    border-radius: 30px;
-    border: 1px solid #d8d5f2;
+.card:hover {
+    /* transform: scale(1.05); */
 }
 
-.tabs-box .tab:hover {
-    background: #efedfb;
+.card a {
+    text-decoration: none;
 }
 
-.tabs-box.dragging .tab {
-    user-select: none;
-    pointer-events: none;
+.card-image {
+    height: 300px;
+    width: 300px;
+    min-height: 300px;
+    min-width: 300px;
+    border: 0.1px solid #000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-.tabs-box .tab.active {
-    color: #fff;
-    background: #5372F0;
-    border-color: transparent;
+.card-image img {
+    height: 100%;
+    /* width: 100%; */
 }
 
-
-
-.tabs {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.card h2 {
+    text-align: center;
+    margin: 10px;
+    font-size: 32px;
+    color: #000;
 }
 
-.tab-content {
-    background-color: #ffffff;
-    padding: 50px 40px;
+.card p {
+    text-align: center;
+    font-size: 18px;
+    color: #7f8c9b;
 }
 
-.tab-content h4 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #000224;
-    font-weight: 600;
+.btn {
+    margin: 10px 10px;
+    /* outline: 1px solid red; */
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    transition: 0.2s;
 }
 
-.tab-content p {
-    text-align: justify;
-    line-height: 1.9;
-    letter-spacing: 0.4px;
-    color: #202238;
+.btn a {
+    background-color: #e0efff;
+    text-align: center;
+    padding: 15px 40px;
+    border-radius: 100px;
 }
 
-.tab-content div {
-    display: none;
+.btn p {
+    color: #0077ff;
 }
 
-.tab-content .active {
-    display: block;
+.btn:hover {
+    transform: scale(1.05);
 }
-
-.tabs .active {
-    background-color: #ffffff;
-    color: #4d5bf9;
-}
-
-.tab-content div {
-    display: none;
-}
-
-.tab-content .activev {
-    display: block;
-}
-
-.tabs .activev {
-    background-color: #ffffff;
-    color: #4d5bf9;
-}
-
-/* Responsive */
 
 @media (max-width: 728px) {
-    .wrapper {
-        width: 40vh;
+    .title {
+        margin-bottom: 20px;
     }
-}
 
-/* -------------------- End Tabs -------------------- */
+    .title h1 {
+        font-size: 48px;
+        padding: 30px 0;
+    }
 
-.tab-content {
-    margin-top: 100px;
-    /* height: 700px; */
-    max-width: 150vh;
-    border-radius: 10px;
-    padding: 10px;
-}
+    .title p {
+        font-size: 22px
+    }
 
-.activev {
-    padding: 0;
-}
-.activev img {
-    width: 100%;
-    border-radius: 10px;
+    .card-image {
+        height: 130px;
+        width: 130px;
+        min-height: 130px;
+        min-width: 130px;
+        border: 0.1px solid #000;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    /*  */
+
+
+    .card-image img {
+        height: 100%;
+        /* width: 100%; */
+    }
+
+    .card h2 {
+        text-align: center;
+        margin: 10px;
+        font-size: 28px;
+        color: #000;
+    }
+
+    .card p {
+        text-align: center;
+        font-size: 14px;
+        color: #7f8c9b;
+    }
+
+    .btn {
+        margin: 10px 10px;
+        /* outline: 1px solid red; */
+        display: flex;
+        /* text-align: center; */
+        justify-content: center;
+        transition: 0.2s;
+    }
+
+    .btn a {
+        background-color: #e0efff;
+        text-align: center;
+        padding: 10px 25px;
+        border-radius: 100px;
+    }
+
+    .btn p {
+        color: #0077ff;
+    }
 }
