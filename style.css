@@ -27,12 +27,13 @@ body {
 
 .content {
     padding: 20px;
+    padding-left: 85px;
     height: 100%;
 }
 
 
 .box {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     /* text-align: center; */
     background: #fff;
     min-height: calc(100vh - 40px);
@@ -50,6 +51,8 @@ body {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.342);
     cursor: default;
     padding: 20px;
+    animation: mineescaleup;
+    animation-duration: 1s;
 }
 
 /*  */
@@ -76,6 +79,9 @@ body {
     transition: 0.2s;
     border-radius: 3px;
     cursor: pointer;
+
+    animation: mineeslidefromleft;
+    animation-duration: 1s;
 }
 
 .card-link a {
@@ -96,6 +102,10 @@ body {
     transform: scale(1.07);
 }
 
+.image-preview {
+    animation: mineeslidefromright;
+    animation-duration: 1s;
+}
 
 .image-preview img {
     width: 90vh;
@@ -103,6 +113,9 @@ body {
 
 /*  */
 @media (max-width: 728px) {
+    .content {
+        padding-left: 20px;
+    }
     .box {
         display: flex;
         flex-direction: column;

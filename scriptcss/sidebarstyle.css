@@ -192,3 +192,92 @@
 }
 
 /* -------------------- End Sidebar -------------------- */
+
+
+/* -------------------- Animation -------------------- */
+@keyframes mineeslidefromleft {
+    0% {
+        transform: translateX(-300px);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes mineeslidefromright {
+    0% {
+        transform: translateX(300px);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes mineeslidefromup {
+    0% {
+        transform: translateY(-300px);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes mineeslidefromdown {
+    0% {
+        transform: translateY(300px);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/*  */
+@keyframes mineescaleup {
+    0% {
+        transform: scale(0.5);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes mineescaledown {
+    0% {
+        transform: scale(1.5);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* -------------------- End Animation -------------------- */

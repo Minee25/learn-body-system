@@ -16,8 +16,9 @@
 
 .content {
     background: #999;
-    padding: 40px;
-    min-height: 100%;
+    padding: 20px;
+    padding-left: 85px;
+    height: 100%;
     width: 100%;
     background: linear-gradient(90deg, rgb(0, 225, 255) 0%, rgb(255, 0, 128) 100%);
 
@@ -25,7 +26,8 @@
 
 .quiz {
     display: flex;
-    /* height: 100%; */
+    outline: 1px solid red;
+    min-height: 100%;
     width: 100%;
     background: #fff;
 }
@@ -38,21 +40,58 @@
     padding: 20px;
 }
 
+.animation1 {
+    animation: mineeslidefromleft;
+    animation-duration: 0.5s;
+}
+
+.animation2 {
+    animation: mineeslidefromright;
+    animation-duration: 0.5s;
+}
+
 .select {
     display: flex;
     flex-direction: column;
 }
+
 .select .link-text {
     font-size: 22px;
 }
 
+.slideanimation1 {
+    animation: mineeslidefromdown;
+    animation-duration: 1s;
+}
+
+.slideanimation2 {
+    animation: mineeslidefromdown;
+    animation-duration: 1.5s;
+}
+
+.slideanimation3 {
+    animation: mineeslidefromdown;
+    animation-duration: 2s;
+}
+
+.slideanimation4 {
+    animation: mineeslidefromdown;
+    animation-duration: 2.5s;
+}
+
+.animation1-1 {
+    animation: mineeslidefromdown;
+    animation-duration: 0.5s;
+}
 /*  */
 
 .quiz-select h1 {
     text-align: center;
     margin: 20px;
     /* margin-bottom: 50px; */
+
 }
+
 .quiz-select .select {
     text-align: center;
 }
@@ -87,11 +126,15 @@
     transform: scale(1.05);
     background: #0060c7;
 }
+
 .quiz-select .select img:hover {
     transform: scale(1.03);
 }
 
 @media (max-width: 728px) {
+    .content {
+        padding-left: 20px;
+    }
     .quiz {
         display: flex;
         flex-direction: column;
@@ -104,7 +147,7 @@
     .quiz-select h1 {
         font-size: 26px;
     }
-    
+
     .content {
         padding: 10px;
     }
