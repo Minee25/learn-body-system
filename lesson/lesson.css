@@ -186,14 +186,12 @@
 
     .card {
         margin: 5px;
-        width: 150px;
+        /* width: 150px; */
     }
 
     .card-image {
-        height: 120px;
-        width: 120px;
-        min-height: 120px;
-        min-width: 120px;
+        height: 100px;
+        width: 100px;
         border: 0.1px solid #000;
         border-radius: 15px;
         display: flex;
