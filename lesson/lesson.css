@@ -89,14 +89,17 @@
     animation: mineeslidefromleft;
     animation-duration: 1s;
 }
+
 .card-2 {
     animation: mineeslidefromdown;
     animation-duration: 1s;
 }
+
 .card-3 {
     animation: mineeslidefromdown;
     animation-duration: 1s;
 }
+
 .card-4 {
     animation: mineeslidefromright;
     animation-duration: 1s;
@@ -186,22 +189,20 @@
 
     .card {
         margin: 5px;
-        /* width: 150px; */
     }
 
     .card-image {
         height: 100px;
         width: 100px;
-        border: 0.1px solid #000;
+        min-height: 140px;
+        min-width: 140px;
         border-radius: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        /* outline: 1px solid gold; */
     }
-
-    /*  */
-
 
     .card-image img {
         height: 100%;
